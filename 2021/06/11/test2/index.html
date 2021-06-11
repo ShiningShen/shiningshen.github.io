@@ -33,7 +33,139 @@
         <hr>
     </div>
     <div class="post-content">
-        
+        <p><a href="Week1%2022e1111a722a4008ae30175e6bb63f44/1-MOOC-.pdf">1-MOOC-操作系统概述.pdf</a></p>
+<h1 id="举例-hello-world的执行过程"><a href="#举例-hello-world的执行过程" class="headerlink" title="举例: hello world的执行过程"></a>举例: hello world的执行过程</h1><p>用户视角</p>
+<p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled.png"></p>
+<p>操作系统视角</p>
+<p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%201.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%201.png"></p>
+<h1 id="操作系统作用"><a href="#操作系统作用" class="headerlink" title="操作系统作用"></a>操作系统作用</h1><ol>
+<li><p>资源管理</p>
+<ol>
+<li><p>记录资源使用情况</p>
+</li>
+<li><p>资源分配</p>
+<ol>
+<li><p>静态分配策略</p>
+<ul>
+<li>优点: 一次分配</li>
+<li>缺点: 浪费资源</li>
+</ul>
+</li>
+<li><p>动态分配策略</p>
+<p> 举例: 页式管理系统, 需要有一个管理的数据结构(0/1表示分配与否)</p>
+</li>
+</ol>
+</li>
+<li><p>资源回收策略</p>
+</li>
+<li><p>提高资源利用率</p>
+</li>
+<li><p>保护资源的使用</p>
+</li>
+<li><p>协调多进程的资源冲突</p>
+</li>
+<li><p>五大基本功能</p>
+<ul>
+<li>进程/线程管理</li>
+<li>存储管理</li>
+<li>文件管理</li>
+<li>设备管理</li>
+<li>用户接口</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>提供系统服务: 命令接口和编程接口</p>
+</li>
+<li><p>对硬件机器的扩展</p>
+<ul>
+<li>硬件系统上的第一层软件</li>
+<li>操作系统—虚拟机器</li>
+</ul>
+</li>
+</ol>
+<h1 id="操作系统特征"><a href="#操作系统特征" class="headerlink" title="操作系统特征"></a>操作系统特征</h1><ol>
+<li>并发: 处理多个同时性的活动<ul>
+<li>宏观: 程序同时执行</li>
+<li>微观: CPU轮流执行</li>
+</ul>
+</li>
+<li>共享<ul>
+<li>资源共享方式分类<ul>
+<li>互斥共享</li>
+<li>同时共享</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>虚拟: 一个物理实体映射为若干个逻辑实体</li>
+<li>随机: 在操作系统运行过程中会有不可预测的事件</li>
+</ol>
+<h1 id="典型操作系统"><a href="#典型操作系统" class="headerlink" title="典型操作系统"></a>典型操作系统</h1><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%202.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%202.png"></p>
+<p>简化版本</p>
+<p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%203.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%203.png"></p>
+<p>内核: 区分不同体系结构</p>
+<p>HAL: 相同体系结构的不同计算机</p>
+<p>以上两层封装硬件结构</p>
+<p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%204.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%204.png"></p>
+<h2 id="Unix"><a href="#Unix" class="headerlink" title="Unix"></a>Unix</h2><p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%205.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%205.png"></p>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%206.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%206.png"></p>
+<p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%207.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%207.png"></p>
+<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%208.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%208.png"></p>
+<h1 id="操作系统分类"><a href="#操作系统分类" class="headerlink" title="操作系统分类"></a>操作系统分类</h1><h2 id="传统"><a href="#传统" class="headerlink" title="传统"></a><strong>传统</strong></h2><ol>
+<li><p>批处理操作系统 Batch OS</p>
+<p> <img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%209.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%209.png"></p>
+<ul>
+<li><p>目的: 提高资源利用率, 增加作业处理吞吐量</p>
+</li>
+<li><p>作业成批处理, 用户无法干预作业的处理过程, 程序代码以卡片的形式输入(卡片机)</p>
+</li>
+<li><p>功能简单的计算机用作输入输出, 功能强大计算机处理作业</p>
+<ul>
+<li>单道批处理</li>
+<li>多道批处理</li>
+</ul>
+</li>
+<li><p>实现</p>
+<p>  SPOOLing system 在一台计算机上实现输入输出和执行, disk上面有输入井和输出井, 可以理解为disk上的两个buffer, 用于存储输入数据和输出数据. </p>
+<p>  使用场景: 外设使用, 比如打印机</p>
+<p>  ***SPOOLing系统的处理把独占式改为共享式</p>
+<p>  <img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%2010.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%2010.png"></p>
+<p>  <img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%2011.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%2011.png"></p>
+</li>
+</ul>
+</li>
+<li><p>分时操作系统: 对CPU进行时间分片</p>
+<ul>
+<li>目标: 及时响应</li>
+</ul>
+</li>
+<li><p>实时操作系统</p>
+<ul>
+<li>目标: 及时响应请求, 完成处理</li>
+</ul>
+</li>
+<li><p>个人计算机操作系统</p>
+<ul>
+<li>目标: 界面友好、功能完善</li>
+</ul>
+</li>
+<li><p>网络操作系统</p>
+</li>
+<li><p>分布式操作系统: 多CPU或者多计算机联网</p>
+<ul>
+<li>统一操作系统, 处理能力强, 可靠性强, 具有透明性(用户不值得自己任务在哪个计算机执行)</li>
+</ul>
+</li>
+<li><p>嵌入式操作系统</p>
+</li>
+</ol>
+<h2 id="TANENBAUM分类"><a href="#TANENBAUM分类" class="headerlink" title="TANENBAUM分类"></a><strong>TANENBAUM分类</strong></h2><p><img src="/Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%2012.png" alt="Week1%2022e1111a722a4008ae30175e6bb63f44/Untitled%2012.png"></p>
+<h1 id="课后问题"><a href="#课后问题" class="headerlink" title="课后问题"></a>课后问题</h1><ol>
+<li>从各大操作系统中得到了什么结论? 各部分是如何关联的?</li>
+<li>安卓的架构如何理解? 和其它操作系统有什么区别?</li>
+</ol>
+
     </div>
 
     
